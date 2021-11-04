@@ -31,7 +31,7 @@ class App extends React.Component {
     console.log("render")
     return (
       <div className="container col-12 overflow-hiden">
-        <div className="row m-2 mx-auto p-5">
+        <div className="row m-2 p-5">
         <h1>Game of thrones</h1>
         {this.state.characters.map((character , index ) => (
             <Character title={character.title} image={character.imageUrl} handleClick={this.handleFavoriteClick} name={character.fullName} />
